@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+	<title>San - Wyporzyczalnia sprzętu wodnego, Noclegi, Bieszczady</title>
+  <meta name="description" content="Przystań San - Odpręż się i spędź niezapomniane chwile w Bieszczadach nad Jeziorem Solińskim. Noclegi, wyporzyczalnia sprzętu wodnego, czarter jahtów">
+  <meta name="keywords" content="przystań san, czarter jahtów Polańczyk, wyporzyczalnia sprzętu wodnego Polańczyk Pieszczady, noclegi Bieszczady, noclegi Polańczyk">
+  <meta name="author" content="Norbert_Sopata">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="../favicon/favicon.png">
+
+  <link rel="stylesheet" type="text/css" href="../css/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,900" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,900,700,500,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+<!-- Header Section -->
+<header class="main--header">
+    <div class="wrapper">
+      <a href="http://przystan-san.pl/" class="logo logo-contact"><img src="../img/logosan.png"  alt="Logo Przystań San"></a>
+      <nav class="main--nav">
+          <ul class="menu bold-text">
+            <li class="menu-item">
+              <a href="../" id="scroll-item">home</a>
+            </li>
+            <li class="menu-item">
+              <a href="../#news" id="scroll-item">aktualności</a>
+            </li>
+            <li class="menu-item">
+              <a href="../#about" id="scroll-item">O nas</a>
+            </li>
+            <li class="menu-item ">
+              <a href="http://przystan-san.pl/v2/oferta" id="offer-item">Oferta</a>
+            </li>
+            <!-- <li class="menu-item">
+              <a href="">galeria</a>
+            </li> -->
+             <!-- <li class="menu-item">
+              <a href="#lacalization">nasza lokalizacja</a>
+            </li> -->
+            <li class="menu-item active">
+              <a href="http://przystan-san.pl/v2/kontakt">kontakt</a>
+            </li>
+            <div class="social-icons">
+            <a href="https://www.facebook.com/przystansan" target="_blank">
+             <span class="fa-stack fa-lg">
+              <i class="fa fa-square-o fa-stack-2x"></i>
+              <i class="fa fa-facebook fa-stack-1x"></i>
+            </span>
+            </a>
+            <a href="https://www.instagram.com/przystan_san" target="_blank">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-square-o fa-stack-2x"></i>
+              <i class="fa fa-instagram fa-stack-1x"></i>
+            </span>
+            </a>
+          </ul>
+      </nav>
+    </div>
+  <div class="mobile-menu">
+    <div class="mobile-menu-header">
+      <div class="header-hamburger">
+        <div class="open-btn" id="mobile-toggle">
+            <img src="http://www.kearnypoint.com/wp-content/themes/kearnypoint/assets/images/icons/hamburger.svg" alt=""></div>
+        </div>
+      </div>
+    <div class="mobile-menu-content">
+          <ul class="menu bold-text">
+            <li class="menu-item">
+              <a href="../" id="scroll-item">home</a>
+            </li>
+            <li class="menu-item">
+              <a href="../#news" id="scroll-item">aktualności</a>
+            </li>
+            <li class="menu-item">
+              <a href="../#about" id="scroll-item">O nas</a>
+            </li>
+            <li class="menu-item active">
+              <a href="http://przystan-san.pl/v2/oferta" id="offer-item">Oferta</a>
+            </li>
+            <!-- <li class="menu-item">
+              <a href="">galeria</a>
+            </li> -->
+             <!-- <li class="menu-item">
+              <a href="#lacalization">nasza lokalizacja</a>
+            </li> -->
+            <li class="menu-item">
+              <a href="http://przystan-san.pl/v2/kontakt">kontakt</a>
+            </li>
+          </ul>
+    </div>
+    </div>
+  </div>
+  </header>
+<!--END Header Section -->
+
+<main class="contact-container">
+  <section class="contact-section">
+    <h2 class="contact">Kontakt:</h2>
+    <p><span>Adres:</span> ul.Równa, 38-610 Polańczyk</p>
+    <p><span>Kontakt:</span> 726-366-961</p>
+    <p><span>e-mail:</span> przystan.san@gmail.com</p>
+    <h3>Wyślij nam wiadomość</h3>
+
+    <!-- Contact form section -->
+
+    
+
+
+    <!-- End Contact form section -->
+   
+  </section>
+  <section class="localization-section">
+    <div class="map" id="map"></div>
+  </section>
+</main>
+
+<script>
+      function initMap() {
+        var uluru = {lat: 49.3686882, lng: 22.4372214};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru,
+          draggable: false,
+          scrollwheel: false,
+
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+          icon: 'http://i.imgur.com/94bYCKy.png',
+          title: 'ul. Równa, 36-610 Polańczyk',
+        });
+
+        map.set("styles", stylesMap
+          );
+
+      
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7MYfwwgIPtqho3CShCQretAIYYZ4qpUk&callback=initMap">
+  </script>
+
+
+<script src="../js/main.js"></script>
+<script src="../js/googlemapsstyle.js"></script>
+
+</body>
+</html>
+   
