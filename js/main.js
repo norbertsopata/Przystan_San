@@ -113,3 +113,28 @@ var mobileMenu = $(".mobile-menu-content");
  $('.mobile-menu-content > ul > li > a').click(function(){
     mobileMenu.removeClass("visible");
  });
+
+// Slider Animation
+
+var counter = 0;
+function setBckImage(){
+    if(counter<3){
+        counter++;
+    } else {
+        counter=1;
+    }
+
+    switch (counter){
+        case 1:
+            jQuery('.title-container').css({"background-image" : "url(galeria/1slide.jpg)"});
+            break;
+        case 2:
+            jQuery('.title-container').css({"background-image" : "url(galeria/2slide.jpg)"});
+            break;
+        case 3:
+            jQuery('.title-container').css({"background-image" : "url(images/mainimgmate.jpg)"});
+            break;
+    }
+}
+
+setInterval(setBckImage, 5000);

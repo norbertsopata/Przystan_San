@@ -697,10 +697,11 @@ section{
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	
 
-
-
+	-webkit-transition: background-image 1000ms ease-in 1000ms;
+    -moz-transition: background-image 1000ms ease-in 1000ms;
+    -o-transition: background-image 1000ms ease-in 1000ms;
+    transition: background-image 1000ms ease-in 1000ms;
 }
 
 .main-title-content{
